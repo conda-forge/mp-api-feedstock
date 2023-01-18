@@ -1,26 +1,26 @@
-From c39f0787a30449ae8023216dd8f702c647953d24 Mon Sep 17 00:00:00 2001
+From c0087c7191be53334e772e55645b73ac96846f58 Mon Sep 17 00:00:00 2001
 From: Jan Janssen <jan-janssen@users.noreply.github.com>
-Date: Wed, 18 Jan 2023 13:08:09 -0700
+Date: Wed, 18 Jan 2023 13:51:55 -0700
 Subject: [PATCH] Update __init__.py
 
 ---
- mp_api/client/__init__.py | 15 +--------------
- 1 file changed, 1 insertion(+), 14 deletions(-)
+ mp_api/client/__init__.py | 11 +----------
+ 1 file changed, 1 insertion(+), 10 deletions(-)
 
 diff --git a/mp_api/client/__init__.py b/mp_api/client/__init__.py
-index 460ec457..8ff86a38 100644
+index 460ec457..097ac123 100644
 --- a/mp_api/client/__init__.py
 +++ b/mp_api/client/__init__.py
-@@ -1,15 +1,2 @@
+@@ -1,15 +1,6 @@
  """ Primary MAPI module """
 -import os
 -from pkg_resources import get_distribution, DistributionNotFound
--from .mprester import MPRester
--from .core import MPRestError
--
+ from .mprester import MPRester
+ from .core import MPRestError
+ 
 -try:  # pragma: no cover
 -    from setuptools_scm import get_version
--
+ 
 -    __version__ = get_version(root="../../", relative_to=__file__)
 -except (ImportError, LookupError):  # pragma: no cover
 -    try:
