@@ -8,11 +8,13 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mp-api-{{ version }}.tar.gz
   sha256: e28033fd801be3e781dcc18420a13cdfe9aa0f6098f2056b0a1126bf7acdf027
+  patches:
+    - version.patch
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
