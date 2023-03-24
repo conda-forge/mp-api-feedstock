@@ -1,11 +1,11 @@
-About mp-api
-============
+About mp-api-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mp-api-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/materialsproject/api
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mp-api-feedstock/blob/main/LICENSE.txt)
 
 Summary: API Server for the Materials Project
 
