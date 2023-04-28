@@ -35,6 +35,7 @@ test:
     - mp_api.client.core
   commands:
     - pip check
+    - pip show mp-api
   requires:
     - pip
 
