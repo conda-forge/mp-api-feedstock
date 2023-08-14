@@ -20,6 +20,7 @@ requirements:
     - python >=3.8
     - setuptools-scm
   run:
+    - boto3
     - emmet-core >=0.54.0
     - monty >=2021.3.12
     - msgpack-python
