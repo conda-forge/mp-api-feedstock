@@ -7,7 +7,7 @@ Home: https://github.com/materialsproject/api
 
 Package license: BSD-3-Clause
 
-Summary: API Server for the Materials Project
+Summary: API Client for the Materials Project
 
 Current build status
 ====================
