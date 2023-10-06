@@ -1,5 +1,5 @@
 {% set name = "mp-api" %}
-{% set version = "0.37.2" %}
+{% set version = "0.37.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mp-api-{{ version }}.tar.gz
-  sha256: 833b09293ea74115b4116a5e0f71040a40fce02f048e8094ea64d58b27ca6b39
+  sha256: eba5672390c4d032846c0d9d2ec0ad62ee645d01c230b5a3b87e3ab7db36f61c
 
 build:
   noarch: python
@@ -24,7 +24,7 @@ requirements:
     - python >=3.9
     - setuptools
     - msgpack-python
-    - maggma
+    - maggma >=0.57.1
     - pymatgen >=2022.3.7
     - typing-extensions >=3.7.4.1
     - requests >=2.23.0
