@@ -1,5 +1,5 @@
 {% set name = "mp-api" %}
-{% set version = "0.38.0" %}
+{% set version = "0.39.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mp-api-{{ version }}.tar.gz
-  sha256: f91a042bf3c5eaeb6a1cbd9144be229e78ed2d1357ef4a8087a65410b7d86cdc
+  sha256: a53069f61d75fc82bda26f023c5c6796e9fd0de9f30d1b2d1d371166e3707f44
 
 build:
   noarch: python
@@ -29,7 +29,7 @@ requirements:
     - typing-extensions >=3.7.4.1
     - requests >=2.23.0
     - monty >=2023.9.25
-    - emmet-core >=0.69.2
+    - emmet-core >=0.74.2
 
 test:
   imports:
