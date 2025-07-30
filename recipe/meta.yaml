@@ -1,5 +1,5 @@
 {% set name = "mp-api" %}
-{% set version = "0.45.7" %}
+{% set version = "0.45.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: bc0e24e7fd230db56445d8ecc1775badec3031b7f141a7301514c8a61b9f10cc
+  sha256: a897f57e89002e04ffca5aec03616c7971a8fb5e31748ff936819d49cc1023c3
 
 build:
   noarch: python
