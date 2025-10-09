@@ -1,5 +1,5 @@
 {% set name = "mp-api" %}
-{% set version = "0.45.11" %}
+{% set version = "0.45.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: e48944eb672ea5d073bf7457dfe9499ee9fb2a66174aeec1823eaf1493f6627f
+  sha256: b79fe99b25b097df8d56a1ba4189cdf6f1879813d766580760365e0666128c9e
 
 build:
   noarch: python
@@ -21,6 +21,7 @@ requirements:
     - setuptools-scm
     - pip
   run:
+    - boto3
     - smart_open
     - typing_extensions >=3.7.4.1
     - smart-open
@@ -32,7 +33,7 @@ requirements:
     - typing-extensions >=3.7.4.1
     - requests >=2.23.0
     - monty >=2024.12.10
-    - emmet-core >=0.84.6rc0,<0.85
+    - emmet-core >=0.84.6rc0
 
 test:
   imports:
