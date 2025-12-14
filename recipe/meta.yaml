@@ -1,5 +1,6 @@
 {% set name = "mp-api" %}
 {% set version = "0.45.15" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
