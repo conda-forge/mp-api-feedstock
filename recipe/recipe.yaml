@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: mp-api
-  version: 0.46.1
+  version: 0.46.2
   python_min: '3.11'
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: baa215833630413c04865f3b5cf82e33182e40d9955c59e8e69aedb352cec2ef
+  sha256: d73e0e8175804f1461a0e5992634e08d7dfd4de682de69fe299f158be7320594
 
 build:
   number: 0
@@ -32,8 +32,8 @@ requirements:
     - pymatgen >2024.2.20
     - requests >=2.23.0
     - monty >=2024.12.10
-    - emmet-core >=0.86.4rc1,<0.86.5
-    - deltalake >=1.4.0
+    - emmet-core >=0.87.0,<0.87.2
+    - deltalake >=1.4.0,<1.6.0
     - pyarrow >=20.0.0
 tests:
   - python:
