@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: mp-api
-  version: 0.46.2
+  version: "0.46.3"
   python_min: '3.11'
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: d73e0e8175804f1461a0e5992634e08d7dfd4de682de69fe299f158be7320594
+  sha256: 23fd367de99879cac4bf8d6ef1dff87c371a10aa7e6aea8bf97d8bf69e12d6db
 
 build:
   number: 0
