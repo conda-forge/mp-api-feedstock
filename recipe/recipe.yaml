@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: mp-api
-  version: 0.47.0
+  version: 0.47.1
   python_min: '3.12'
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 5d8937a79f9733c1a5289eea772078ded6fd8dbc5622e4d28c39c3b29255a480
+  sha256: 1849196673c404d78f69d4849bfafb4be45c3b7e567e1eedd9aa2fab2f7302e5
 
 build:
   number: 0
@@ -25,9 +25,9 @@ requirements:
     - pip
   run:
     - orjson >=3.10,<4
-    - boto3
+    - boto3 >=1.34
     - python >=${{ python_min }}
-    - pymatgen >2024.2.20
+    - pymatgen >=2026.10.24
     - requests >=2.23.0
     - monty >=2024.12.10
     - emmet-core >=0.88.0
@@ -41,7 +41,7 @@ tests:
       pip_check: true
       python_version:
         - ${{ python_min }}
-        - "*"
+        - '*'
 
 about:
   summary: API Client for the Materials Project
